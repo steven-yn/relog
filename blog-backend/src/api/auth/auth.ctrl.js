@@ -128,3 +128,33 @@ export const logout = async (ctx) => {
   ctx.cookies.set('access_token');
   ctx.status = 204; // No Content
 };
+
+/*
+GET /api/auth/readUser
+*/
+
+// 유저 목록 가지고오기.
+export const readUser = async (ctx) => {
+  try {
+    const userList = await User.find();
+    ctx.body = userList;
+  } catch (e) {
+    ctx.throw(500, e);
+  }
+};
+
+/*
+POST /api/auth/permitUser
+*/
+
+// 가입 승인하기.
+
+/*
+export const permitUser = async (ctx) => {
+  try {
+    const
+  } catch (e) {
+    ctx.thre
+  }
+}
+*/
