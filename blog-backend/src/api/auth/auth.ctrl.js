@@ -4,8 +4,8 @@ import User from '../../models/user';
 /*
 POST /api/auth/register
 {
-  "username": "steven",
-  "password": "@stron0cean"
+  "username": "testuser",
+  "password": "1234"
 }
 */
 
@@ -58,8 +58,8 @@ export const register = async (ctx) => {
 /*
 POST /api/auth/login
 {
-  "username": "steven",
-  "password": "@stron0cean"
+  "username": "testuser",
+  "password": "1234"
 }
 */
 
@@ -128,6 +128,14 @@ export const logout = async (ctx) => {
   ctx.cookies.set('access_token');
   ctx.status = 204; // No Content
 };
+
+/****************************************
+// Description : Admin RestAPI
+// Vision : V1.0.0
+// Filename : auth.ctrl.js
+// Copyright 2021, Sung Yeon Yoon
+// Email: testuser_yoon1009@naver.com
+* ****************************************/
 
 /*
 GET /api/auth/readUser
