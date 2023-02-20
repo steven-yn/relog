@@ -1,0 +1,22 @@
+.button{
+    cursor:pointer;
+    transition: transform 300ms ease;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 50%;
+}
+.red{
+  color:red;
+}
+h3{
+  height: 30px;
+  width: 20px;
+  text-align: unset;
+  margin-left: 51.1%;
+  margin-bottom: 3rem;
+}
+.button:hover{
+    transform: scale(1.1);
+}
